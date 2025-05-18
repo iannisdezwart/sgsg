@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SG StreetGuessr</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-geometryutil"></script>
+  </head>
+  <body>
+    <div id="map">
+      <div id="top-bar">
+        <div id="street-sign">
+          <div id="street-sign-left-pad"></div>
+          <h1 id="street-name"></h1>
+          <div id="street-sign-right-pad"></div>
+        </div>
+        <div id="top-bar-right">
+          <div id="stats">
+            <p id="num-streets"></p>
+            <p id="stat-bad"></p>
+            <p id="stat-ok"></p>
+            <p id="stat-good"></p>
+          </div>
+          <input type="text" id="filter" placeholder="Filter" />
+        </div>
+      </div>
+      <div id="bottom-bar">
+        <h2 id="result"></h2>
+      </div>
+    </div>
+    <script src="streets.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
